@@ -83,16 +83,6 @@
       bindings = <&kp LA(LC(COMMA))>;
       key-positions = <30 31>;
     };
-
-    Right_Click {
-      bindings = <&kp LS(F10)>;
-      key-positions = <6 7>;
-    };
-
-    Paste_Values_Only {
-      bindings = <&Paste_Values_Only>;
-      key-positions = <24 25>;
-    };
   };
 
   macros {
@@ -115,13 +105,6 @@
       #binding-cells = <0>;
       bindings = <&kp LA(H) &kp F &kp K>;
       label = "EXCEL_SMALLWORD";
-    };
-
-    Paste_Values_Only: Paste_Values_Only {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings = <&kp LA(LC(V)) &kp V &kp ENTER>;
-      label = "PASTE_VALUES_ONLY";
     };
   };
 
